@@ -1,0 +1,207 @@
+[
+  {
+    "nombre": "Vicencio González",
+    "slug": "vicencio-gonzalez",
+    "especialidad": "Fundador y director",
+    "bio": "Ingeniero industrial por la Universidad de Carabobo y máster en Administración de Empresas por el IESE (Barcelona), fue en 1990 uno de los fundadores y el primer director de la Escuela de Escritores. Editó «Y Latinoamérica inventó la telenovela», a partir del taller de José Ignacio Cabrujas, y hoy preside ECREA, donde también enseña.",
+    "foto": null,
+    "fuentes": [
+      "https://escuelaescritorescaracas.org/our-teachers/vicencio-gonzalez/",
+      "https://escuelaescritorescaracas.org/nosotros/",
+      "https://diariolaregion.net/2017/03/28/escuela-de-escritores-de-venezuela-pionera-en-latinoamerica"
+    ]
+  },
+  {
+    "nombre": "Mario Morenza",
+    "slug": "mario-morenza",
+    "especialidad": "Narrativa",
+    "bio": "Escritor e investigador, enseña desde 2009 en la Universidad Central de Venezuela, donde dicta cursos de posgrado sobre cuento y novela venezolanos y dirige el taller Mares de Narrativa. Publicó los cuentarios «Pasillos de mi memoria ajena» y «La senda de los diálogos perdidos» (2008) y la novela «El plano inferior» (2026). Ganó la 71.ª edición del Concurso de Cuentos de El Nacional.",
+    "foto": null,
+    "fuentes": [
+      "https://escuelaescritorescaracas.org/our-teachers/mario-morenza/",
+      "https://eldiario.com/2026/05/31/mario-morenza-plano-inferior-oda-mendigos/",
+      "https://latinamericanliteraturetoday.org/es/lal_author/mario-morenza-es"
+    ]
+  },
+  {
+    "nombre": "Tony Rodríguez",
+    "slug": "tony-rodriguez",
+    "especialidad": "Guion y dirección audiovisual",
+    "bio": "Estudió Dirección y Producción Cinematográfica en la Universidad Simón Bolívar y Actuación, Dirección y Guion en el C.E.T. de Madrid. Fue director general de las telenovelas «Sangre de mi tierra» y «Mi familia perfecta» (NBC-Telemundo), dirigió «Juana la virgen» y «Reina de corazones», y fundó en Caracas la productora Idea Audiovisual.",
+    "foto": null,
+    "fuentes": [
+      "https://escuelaescritorescaracas.org/our-teachers/tony-rodriguez/",
+      "https://en.wikipedia.org/wiki/Sangre_de_mi_tierra",
+      "https://www.produ.com/english/noticias/vip-2000-tv-veteran-director-tony-rodriguez-joins-those-producing-episodes-for-escandalos-in-an-independent-manner-in-venezuela"
+    ]
+  },
+  {
+    "nombre": "Brila Martínez",
+    "slug": "brila-martinez",
+    "especialidad": "Escritura publicitaria",
+    "bio": "Licenciada en Publicidad por la UAH y máster en Dirección de Publicidad y Creatividad por OBS, cuenta además con diplomados en marketing digital y estudios de diseño gráfico. Se formó en los talleres de escritura creativa de ECREA y cursa una especialización en Publicidad en la UCAB.",
+    "foto": null,
+    "fuentes": [
+      "https://escuelaescritorescaracas.org/our-teachers/brila-martinez/"
+    ]
+  },
+  {
+    "nombre": "Ángel Gustavo Infante",
+    "slug": "angel-gustavo-infante",
+    "especialidad": "Narrativa",
+    "bio": "Nacido en Caracas en 1959, es licenciado en Letras por la UCV y magíster en Literatura Latinoamericana por la USB. Profesor e investigador universitario (UCV, UCAB), es autor de «Cerrícolas» (1987), premio de narrativa Fundarte, de la novela «Yo soy la rumba» (1992) y de «Una mujer por siempre jamás» (2007), Premio Municipal de Literatura.",
+    "foto": null,
+    "fuentes": [
+      "https://escuelaescritorescaracas.org/our-teachers/angel-gustavo-infante/",
+      "https://es.wikipedia.org/wiki/%C3%81ngel_Gustavo_Infante"
+    ]
+  },
+  {
+    "nombre": "Aniuska Castro",
+    "slug": "aniuska-castro",
+    "especialidad": "Narrativa",
+    "bio": "Psicóloga clínica por la UCV, con especialización en Matrimonio y Familia por la Universidad de Navarra, se formó en narrativa en la Escuela de Escritores de Madrid. Ha publicado los libros de cuentos «La habitación de al lado» (2018) y «Albahaca» (2020) y lleva más de veinte años como docente universitaria.",
+    "foto": null,
+    "fuentes": [
+      "https://escuelaescritorescaracas.org/our-teachers/aniuska-castro/"
+    ]
+  },
+  {
+    "nombre": "Lourdes Sifontes",
+    "slug": "lourdes-sifontes",
+    "especialidad": "Poesía y narrativa",
+    "bio": "Nacida en Caracas en 1961, es licenciada en Letras por la UCV y magíster y doctora en Letras por la USB, donde es profesora titular desde 1991. Poeta y narradora, es autora de «Los nuevos exilios» (Planeta, 1991) y «Vuelos rasgados» (2024), obtuvo los premios Fundarte (1991) y Municipal (1994) de poesía y es individuo de número de la Academia Venezolana de la Lengua.",
+    "foto": null,
+    "fuentes": [
+      "https://escuelaescritorescaracas.org/our-teachers/lourdes-sifontes/",
+      "https://www.asale.org/academico/lourdes-sifontes-grecco"
+    ]
+  },
+  {
+    "nombre": "Luis Barrera Linares",
+    "slug": "luis-barrera-linares",
+    "especialidad": "Narrativa y crítica",
+    "bio": "Nacido en Maracaibo en 1951, es narrador, crítico y cronista, magíster en Lingüística Aplicada por la Universidad de Essex y doctor en Letras por la USB. Ha enseñado en la USB, la UCV y la UCAB, entre otras, y es autor de «Sin partida de yacimiento» y «La duda melódica». Es individuo de número de la Academia Venezolana de la Lengua.",
+    "foto": null,
+    "fuentes": [
+      "https://escuelaescritorescaracas.org/our-teachers/luis-barrera-linares/",
+      "https://es.wikipedia.org/wiki/Luis_Barrera_Linares"
+    ]
+  },
+  {
+    "nombre": "José Tomás Angola Heredia",
+    "slug": "jose-tomas-angola-heredia",
+    "especialidad": "Poesía y teatro",
+    "bio": "Nacido en Caracas en 1967, es escritor, dramaturgo, director y actor, comunicador social por la UCAB, con estudios en Columbia University y en el International Writing Program de Iowa. Ha escrito más de treinta obras de teatro y libros de poesía y cuento, ganó el Premio Municipal de Teatro (2001) y el Premio Isaac Chocrón (2019), y en 2024 ingresó en la Academia Venezolana de la Lengua.",
+    "foto": null,
+    "fuentes": [
+      "https://escuelaescritorescaracas.org/our-teachers/jose-tomas-angola-heredia/",
+      "https://www.meer.com/es/79973-angola-heredia-trascendiendo-la-dramaturgia-venezolana"
+    ]
+  },
+  {
+    "nombre": "María del Carmen Porras",
+    "slug": "maria-del-carmen-porras",
+    "especialidad": "Literatura latinoamericana",
+    "bio": "Profesora titular del Departamento de Lengua y Literatura de la Universidad Simón Bolívar, es licenciada en Letras por la UCV (1993), magíster por la Universidad Andina Simón Bolívar (1995) y doctora en Letras por la USB (2005). Es autora de «Mirada anacrónica y resistencia. La obra de Álvaro Mutis» (2018) y de numerosos artículos sobre narrativa latinoamericana.",
+    "foto": null,
+    "fuentes": [
+      "https://escuelaescritorescaracas.org/our-teachers/maria-del-carmen-porras/"
+    ]
+  },
+  {
+    "nombre": "Alejandro Sebastiani Verlezza",
+    "slug": "alejandro-sebastiani-verlezza",
+    "especialidad": "Poesía y ensayo",
+    "bio": "Poeta nacido en Caracas, licenciado en Comunicación Social y en Letras y magíster en Estudios Literarios por la UCV, donde enseña literatura desde 2015. Ha publicado «Posdatas» (2011), «Derivas» (2013), «Canción de la encrucijada» (2016), «Partir» (2018) y «Los hilos subterráneos» (2020), y su obra figura en antologías de Venezuela, México y España.",
+    "foto": null,
+    "fuentes": [
+      "https://escuelaescritorescaracas.org/our-teachers/alejandro-sebastiani-verlezza/",
+      "https://www.goodreads.com/author/show/8329198.Alejandro_Sebastiani_Verlezza"
+    ]
+  },
+  {
+    "nombre": "Rosana Hon",
+    "slug": "rosana-hon",
+    "especialidad": "Lectura y redacción",
+    "bio": "Licenciada en Educación, con especialización en Gerencia Educativa y diplomado en Programación Neurolingüística y Coaching, ha completado numerosos cursos y talleres de lingüística, redacción y comprensión lectora.",
+    "foto": null,
+    "fuentes": [
+      "https://escuelaescritorescaracas.org/our-teachers/prof-rosana-hon/"
+    ]
+  },
+  {
+    "nombre": "Jacqueline Ropain Guzmán",
+    "slug": "jacqueline-ropain-guzman",
+    "especialidad": "Oratoria, voz y dicción",
+    "bio": "Profesora de Castellano, Literatura y Latín por el Instituto Pedagógico de Caracas, donde obtuvo también una maestría en Lectura y Escritura, es docente universitaria en el área de comunicación y lenguaje. Asesora a empresas en la formación de directivos en oratoria y comunicación organizacional y es la docente titular del taller de Oratoria, voz y dicción de la escuela.",
+    "foto": null,
+    "fuentes": [
+      "https://escuelaescritorescaracas.org/our-teachers/prof-jacqueline-ropain-guzman/",
+      "https://escuelaescritorescaracas.org/cursos-in-company/",
+      "https://escuelaescritorescaracas.org/producto/taller-de-oratoria-voz-y-diccion/"
+    ]
+  },
+  {
+    "nombre": "Dulce Pérez Colmenárez",
+    "slug": "dulce-perez-colmenarez",
+    "especialidad": "Comunicación y escritura creativa",
+    "bio": "Nacida en La Victoria, es periodista egresada de Comunicación Social de la UCAB. Escribe cuentos, pinta, hace fotografía y estrenó su obra de teatro «Soy libre»; ha desarrollado además una larga carrera en comunicación corporativa, mercadeo y contenidos para redes sociales.",
+    "foto": null,
+    "fuentes": [
+      "https://escuelaescritorescaracas.org/our-teachers/prof-dulce-perez-colmenarez/"
+    ]
+  },
+  {
+    "nombre": "Cristóbal Guerra",
+    "slug": "cristobal-guerra",
+    "especialidad": "Periodismo y crónica",
+    "bio": "Comunicador social por la UCAB (1984), donde enseñó periodismo y literatura durante treinta años, trabajó en El Nacional de 1984 a 2014 y cubrió nueve Mundiales de fútbol y seis Juegos Olímpicos. Es autor de novelas, biografías como «Pelé» (2008) y crónicas como «Cumaná de la memoria» (2015), y dicta talleres en la escuela desde 2011.",
+    "foto": null,
+    "fuentes": [
+      "https://escuelaescritorescaracas.org/our-teachers/prof-cristobal-guerra/",
+      "https://escuelaescritorescaracas.org/nosotros/"
+    ]
+  },
+  {
+    "nombre": "Alberto Bueno Rangel",
+    "slug": "alberto-bueno-rangel",
+    "especialidad": "Edición y poesía",
+    "bio": "Escritor, editor y curador, estudió Letras en la UCV y ha publicado poesía y ensayos sobre arte contemporáneo. Coordinó las publicaciones del Museo de Arte Contemporáneo, fundó en 2016 el taller de fotolibro «Detrás de la Mácula» en la Sala Mendoza y dirige desde 2021 la Escuela de Imaginación.",
+    "foto": null,
+    "fuentes": [
+      "https://escuelaescritorescaracas.org/our-teachers/alberto-bueno-rangel/"
+    ]
+  },
+  {
+    "nombre": "Luis Colmenares",
+    "slug": "luis-colmenares",
+    "especialidad": "Guion de telenovela",
+    "bio": "Escritor de telenovelas, series y películas para televisión con más de cuarenta años de oficio, especializado en estructura dramática y construcción de personajes. Ha sido asesor dramático en Sony Pictures Television y director literario en Telemundo NBC, y ha escrito para RCTV, Venevisión, TV Globo, RTI y Televisa.",
+    "foto": null,
+    "fuentes": [
+      "https://escuelaescritorescaracas.org/our-teachers/luis-colmenares/"
+    ]
+  },
+  {
+    "nombre": "María Elena Gómez",
+    "slug": "maria-elena-gomez",
+    "especialidad": "Gramática y redacción",
+    "bio": "Profesora universitaria de lingüística, gramática y enseñanza de la lectura y la escritura en el Instituto Pedagógico de Caracas (UPEL), la UCV y la ULA. Es autora de diccionarios escolares publicados por Editorial Larense y preparó para la Biblioteca Ayacucho la edición de «La tienda de muñecos» de Julio Garmendia.",
+    "foto": null,
+    "fuentes": [
+      "https://escuelaescritorescaracas.org/our-teachers/prof-maria-elena-gomez/"
+    ]
+  },
+  {
+    "nombre": "Néstor J. Piamo O.",
+    "slug": "nestor-j-piamo-o",
+    "especialidad": "Oratoria y locución",
+    "bio": "Locutor y productor nacional independiente, dirige los programas «Entre líneas» y «En primera fila» y ha impartido talleres de locución y producción radiofónica para públicos diversos. En la escuela es docente de Oratoria, voz y dicción.",
+    "foto": null,
+    "fuentes": [
+      "https://escuelaescritorescaracas.org/cursos-in-company/",
+      "https://2001online.com/author/npiamo"
+    ]
+  }
+]
