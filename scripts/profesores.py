@@ -21,7 +21,7 @@ orden = fund + resto
 cards = []
 for k, p in enumerate(orden):
     cls = 'prof lead' if k == 0 else 'prof'
-    role = 'Fundador y presidente' if k == 0 else html.escape(p['especialidad'])
+    role = 'Fundador y director' if k == 0 else html.escape(p['especialidad'])
     cards.append(f'''        <article class="{cls}" id="{p['slug']}">
           <div class="pic">{foto(p,'../')}</div>
           <div class="txt"><span class="label">{role}</span><h3>{html.escape(p['nombre'])}</h3><p>{html.escape(p['bio'])}</p></div>
