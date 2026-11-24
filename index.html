@@ -14,214 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Courier+Prime:wght@400;700&family=Libre+Franklin:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap">
-<style>
-/* Layout: collage de papel rasgado sobre crema; bandas a sangre con contenido en columna de 1180px */
-:root{
-  --paper:#F3ECDD; --paper-2:#E9DFC9; --ink:#141210; --ink-soft:#4A443B;
-  --red:#D22B21; --yellow:#F6CD1E; --blue:#1E4D8C; --white:#FFFDF8;
-  --f-display:"Playfair Display", Georgia, "Times New Roman", serif;
-  --f-cond:"Anton", "Oswald", Impact, "Arial Narrow", sans-serif;
-  --f-body:"Libre Franklin", "Helvetica Neue", Arial, sans-serif;
-  --f-type:"Courier Prime", "Courier New", monospace;
-  --max:1180px;
-  color-scheme:light;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  background:var(--paper); color:var(--ink); font-family:var(--f-body); font-size:17px; line-height:1.55;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .28 0 0 0 0 .18 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
-.wrap{max-width:var(--max);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-h1,h2,h3{text-wrap:balance;margin:0}
-.label{font-family:var(--f-type);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}
-.mark{background:linear-gradient(100deg,transparent 0 2%,var(--yellow) 2% 97%,transparent 97%);background-size:100% 62%;background-repeat:no-repeat;background-position:0 78%;padding:0 .08em}
-.torn{position:relative}
-
-/* ---------- Cabecera ---------- */
-header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--paper);border-bottom:2px solid var(--ink)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:12px}
-.logo{display:inline-block;line-height:0;text-decoration:none}
-.logo img{height:49px;width:auto;display:block}
-footer .logo img{height:64px}
-.lema{display:block;height:22px;width:auto;margin-top:16px}
-nav.main{display:flex;gap:22px;flex-wrap:wrap;align-items:center}
-nav.main a{text-decoration:none;font-weight:500;font-size:.95rem}
-nav.main a:hover{text-decoration:underline;text-decoration-color:var(--red);text-decoration-thickness:3px;text-underline-offset:5px}
-.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-cond);font-size:1.05rem;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;padding:12px 20px;border:2px solid var(--ink);background:var(--ink);color:var(--white);transition:transform .15s ease, box-shadow .15s ease}
-.btn:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--red)}
-.btn.ghost{background:transparent;color:var(--ink)}
-.btn.red{background:var(--red);border-color:var(--red)}
-.menu-toggle{display:none}
-@media (max-width:900px){ nav.main a:not(.btn){display:none} }
-
-/* ---------- Hero ---------- */
-.hero{position:relative;overflow:hidden;padding-block:56px 72px}
-.hero .wrap{display:grid;grid-template-columns:1.25fr .9fr;gap:40px;align-items:center}
-.hero-copy{position:relative;z-index:2;min-width:0}
-.hero .kicker{display:inline-block;background:var(--ink);color:var(--paper);padding:6px 12px;margin-bottom:22px}
-.hero h1{font-family:var(--f-display);font-weight:900;font-size:clamp(2.9rem,7.4vw,6.4rem);line-height:.92;letter-spacing:-.015em}
-.hero h1 em{font-style:italic;color:var(--red)}
-.hero h1 .cond{display:block;font-family:var(--f-cond);font-weight:400;font-size:.52em;letter-spacing:.02em;line-height:1.05;margin-top:.25em;text-transform:uppercase}
-.hero p.lead{font-size:1.2rem;max-width:34ch;margin:26px 0 30px;color:var(--ink-soft)}
-.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
-
-.collage{position:relative;aspect-ratio:4/5;max-width:100%;min-width:0}
-.sheet{position:absolute;box-shadow:0 10px 24px rgba(40,30,10,.18)}
-.sheet.year{inset:6% 4% 18% 8%;background:var(--ink);color:var(--paper);transform:rotate(-3deg);display:flex;flex-direction:column;justify-content:flex-end;padding:8% 9% 13%;overflow:hidden}
-.sheet.year::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,rgba(243,236,221,.22) 1.2px,transparent 1.6px);background-size:7px 7px;mask-image:linear-gradient(160deg,#000 10%,transparent 70%);-webkit-mask-image:linear-gradient(160deg,#000 10%,transparent 70%)}
-.sheet.year .big{position:relative;font-family:var(--f-cond);font-size:clamp(5rem,13vw,10.5rem);line-height:.82;letter-spacing:-.01em}
-.sheet.year .cap{position:relative;font-family:var(--f-type);font-size:.85rem;max-width:26ch;margin-top:12px;color:var(--paper-2)}
-.sheet.strip{left:-4%;right:20%;bottom:9%;height:15%;background:var(--yellow);transform:rotate(2.5deg);display:flex;align-items:center;padding:0 7%}
-.sheet.strip span{font-family:var(--f-display);font-weight:900;font-style:italic;font-size:clamp(1.15rem,2.4vw,1.9rem)}
-.sheet.note{right:0;top:0;width:44%;background:var(--white);transform:rotate(5deg);padding:14px 16px;font-family:var(--f-type);font-size:.8rem;line-height:1.35}
-.sheet.note b{display:block;font-family:var(--f-cond);font-weight:400;font-size:1.25rem;color:var(--blue);letter-spacing:.03em;margin-bottom:4px}
-.bolt{position:absolute;z-index:3;filter:drop-shadow(0 6px 10px rgba(120,20,10,.25))}
-.bolt.b1{width:22%;left:-6%;top:22%;transform:rotate(-12deg)}
-.bolt.b2{width:12%;right:6%;bottom:-2%;transform:rotate(18deg)}
-.birds{position:absolute;z-index:3;right:-2%;top:42%;width:38%;color:var(--ink)}
-.hero .birds-bg{position:absolute;left:44%;top:6%;width:120px;opacity:.75;z-index:1}
-
-@media (max-width:860px){
-  .hero .wrap{grid-template-columns:1fr}
-  .collage{max-width:440px;width:100%;margin:10px auto 0}
-}
-
-/* ---------- Cifras ---------- */
-.stats{background:var(--red);color:var(--white)}
-.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding-block:30px}
-.stat{padding:6px 22px;border-left:2px solid rgba(255,253,248,.35);min-width:0}
-.stat:first-child{border-left:0;padding-left:0}
-.stat .n{font-family:var(--f-cond);font-size:clamp(2.4rem,5vw,3.8rem);line-height:1;font-variant-numeric:tabular-nums}
-.stat .t{font-size:.95rem;margin-top:6px;max-width:22ch}
-@media (max-width:760px){
-  .stats .wrap{grid-template-columns:1fr 1fr;row-gap:22px}
-  .stat:nth-child(3){border-left:0;padding-left:0}
-}
-
-/* ---------- Secciones ---------- */
-section.block{padding-block:84px}
-.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
-.sec-head h2{font-family:var(--f-display);font-weight:900;font-size:clamp(2.2rem,4.6vw,3.6rem);line-height:1}
-.sec-head .label{color:var(--red);display:block;margin-bottom:10px}
-.sec-head a.more{font-family:var(--f-cond);text-transform:uppercase;letter-spacing:.05em;text-decoration:none;border-bottom:3px solid var(--red);padding-bottom:2px}
-
-/* Cursos */
-.courses{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.course{background:var(--white);border:2px solid var(--ink);display:flex;flex-direction:column;min-width:0;transition:transform .18s ease, box-shadow .18s ease}
-.course:hover{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--ink)}
-.course .band{height:118px;position:relative;overflow:hidden;border-bottom:2px solid var(--ink)}
-.course:nth-child(1) .band{background:var(--blue)}
-.course:nth-child(2) .band{background:var(--yellow)}
-.course:nth-child(3) .band{background:var(--red)}
-.course .band .glyph{position:absolute;right:14px;bottom:-22px;font-family:var(--f-display);font-weight:900;font-style:italic;font-size:8rem;line-height:1;color:rgba(255,253,248,.9)}
-.course:nth-child(2) .band .glyph{color:var(--ink)}
-.course .band .tag{position:absolute;left:16px;top:14px;background:var(--ink);color:var(--paper);padding:4px 9px}
-.course .body{padding:20px 20px 22px;display:flex;flex-direction:column;gap:10px;flex:1}
-.course h3{font-family:var(--f-display);font-weight:900;font-size:1.45rem;line-height:1.1}
-.course .meta{font-family:var(--f-type);font-size:.85rem;color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:4px 14px}
-.course p{margin:0;font-size:.97rem}
-.course .go{margin-top:auto;padding-top:8px;font-family:var(--f-cond);text-transform:uppercase;letter-spacing:.05em;text-decoration:none;color:var(--red)}
-@media (max-width:900px){.courses{grid-template-columns:1fr}}
-
-/* Historia */
-.history{background:var(--ink);color:var(--paper);position:relative;overflow:hidden}
-.history .sec-head h2{color:var(--paper)}
-.history .sec-head .label{color:var(--yellow)}
-.history .intro{font-family:var(--f-display);font-style:italic;font-weight:700;font-size:clamp(1.3rem,2.4vw,1.75rem);line-height:1.35;max-width:46ch;margin:0 0 56px}
-.history .intro .mark{color:var(--ink)}
-.timeline{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid rgba(243,236,221,.25)}
-.timeline li{padding:26px 26px 30px 0;border-bottom:2px solid rgba(243,236,221,.15);min-width:0}
-.timeline li:not(:nth-child(3n+1)){padding-left:26px;border-left:2px solid rgba(243,236,221,.15)}
-.timeline .y{font-family:var(--f-cond);font-size:2.6rem;line-height:1;color:var(--yellow)}
-.timeline li:nth-child(1) .y{color:var(--red)}
-.timeline h3{font-family:var(--f-body);font-weight:700;font-size:1.08rem;margin:10px 0 6px}
-.timeline p{margin:0;font-size:.95rem;color:#CFC6B4}
-@media (max-width:900px){
-  .timeline{grid-template-columns:1fr}
-  .timeline li,.timeline li:not(:nth-child(3n+1)){padding:22px 0;border-left:0}
-}
-
-/* Maestros */
-.masters{padding-block:84px;position:relative;overflow:hidden}
-.masters .wrap{position:relative}
-.names{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:baseline;margin-top:8px}
-.names span{font-family:var(--f-display);font-weight:900;line-height:1.05}
-.names span:nth-child(3n){font-family:var(--f-cond);font-weight:400;text-transform:uppercase;letter-spacing:.01em}
-.names span:nth-child(4n+1){font-style:italic}
-.names .s1{font-size:clamp(2.2rem,5.4vw,4.4rem)}
-.names .s2{font-size:clamp(1.6rem,3.6vw,2.9rem)}
-.names .s3{font-size:clamp(1.2rem,2.4vw,1.9rem);color:var(--ink-soft)}
-.names .hi{color:var(--red)}
-.names .bl{color:var(--blue)}
-.masters .foot{margin-top:32px;max-width:60ch;color:var(--ink-soft)}
-
-/* Publicaciones */
-.pubs{display:grid;grid-template-columns:1.3fr 1fr;gap:28px}
-.feature{position:relative;background:var(--yellow);border:2px solid var(--ink);padding:34px;display:flex;flex-direction:column;gap:14px;min-width:0}
-.feature .label{color:var(--ink)}
-.feature h3{font-family:var(--f-display);font-weight:900;font-size:clamp(1.9rem,3.6vw,2.9rem);line-height:1.02}
-.feature p{margin:0;max-width:52ch}
-.feature .by{font-family:var(--f-type);font-size:.9rem}
-.feature .stamp{position:absolute;right:22px;top:-18px;transform:rotate(8deg);background:var(--red);color:var(--white);font-family:var(--f-cond);letter-spacing:.06em;padding:8px 12px;font-size:.95rem}
-.list{display:flex;flex-direction:column;border-top:2px solid var(--ink);min-width:0}
-.list a{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;padding:18px 0;border-bottom:2px solid var(--ink);text-decoration:none}
-.list a:hover h4{color:var(--red)}
-.list .cat{grid-column:1/-1;font-family:var(--f-type);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--blue)}
-.list h4{grid-column:1/-1;margin:0;font-family:var(--f-display);font-weight:700;font-size:1.25rem;line-height:1.2}
-.cats{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
-.cats a{font-family:var(--f-type);font-size:.82rem;text-decoration:none;border:1.5px solid var(--ink);padding:5px 10px;background:var(--white)}
-.cats a:hover{background:var(--ink);color:var(--paper)}
-@media (max-width:900px){.pubs{grid-template-columns:1fr}}
-
-/* Servicios */
-.services{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:2px solid var(--ink);background:var(--white)}
-.svc{padding:28px;min-width:0}
-.svc + .svc{border-left:2px solid var(--ink)}
-.svc .label{color:var(--red)}
-.svc h3{font-family:var(--f-cond);font-weight:400;font-size:1.9rem;letter-spacing:.01em;text-transform:uppercase;margin:8px 0 8px;line-height:1.05}
-.svc p{margin:0;font-size:.97rem;color:var(--ink-soft)}
-@media (max-width:900px){.services{grid-template-columns:1fr}.svc + .svc{border-left:0;border-top:2px solid var(--ink)}}
-
-/* Sede + Contacto */
-.visit{background:var(--blue);color:var(--white)}
-.visit .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;padding-block:80px;align-items:center}
-.visit h2{font-family:var(--f-display);font-weight:900;font-size:clamp(2.2rem,4.6vw,3.6rem);line-height:1}
-.visit h2 em{color:var(--yellow)}
-.visit .addr{font-size:1.1rem;margin:20px 0 0;max-width:40ch}
-.card-contact{background:var(--paper);color:var(--ink);padding:28px;transform:rotate(-1.5deg);box-shadow:0 14px 30px rgba(0,0,0,.25);min-width:0}
-.card-contact dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:12px 18px}
-.card-contact dt{font-family:var(--f-type);font-size:.8rem;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-soft);padding-top:3px}
-.card-contact dd{margin:0;font-weight:700;overflow-wrap:anywhere}
-.card-contact .btn{margin-top:22px}
-@media (max-width:860px){.visit .wrap{grid-template-columns:1fr}}
-
-/* Apoyo */
-.support .wrap{display:flex;gap:30px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding-block:56px}
-.support p{font-family:var(--f-display);font-weight:900;font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.15;margin:0;max-width:30ch}
-
-footer{border-top:2px solid var(--ink);background:var(--paper-2)}
-footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px;padding-block:44px 30px}
-footer h5{font-family:var(--f-type);text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;margin:0 0 10px;color:var(--red)}
-footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:.95rem}
-footer a{text-decoration:none}
-footer a:hover{text-decoration:underline}
-footer .legal{grid-column:1/-1;border-top:1px solid rgba(20,18,16,.2);padding-top:18px;font-family:var(--f-type);font-size:.8rem;color:var(--ink-soft);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-@media (max-width:860px){footer .wrap{grid-template-columns:1fr 1fr}}
-
-/* Entrada de la portada */
-@media (prefers-reduced-motion:no-preference){
-  .hero h1,.hero p.lead,.hero .ctas{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
-  .hero p.lead{animation-delay:.08s}.hero .ctas{animation-delay:.14s}
-  .sheet,.bolt,.birds{animation:drop .8s cubic-bezier(.2,.8,.2,1) both}
-  .sheet.strip{animation-delay:.15s}.sheet.note{animation-delay:.25s}.bolt{animation-delay:.35s}.birds{animation-delay:.45s}
-  @keyframes rise{from{transform:translateY(14px)}to{transform:none}}
-  @keyframes drop{from{translate:0 -10px;scale:1.03}to{translate:0 0;scale:1}}
-}
-</style>
+<link rel="stylesheet" href="assets/estilo.css">
 </head>
 <body>
 
@@ -240,7 +33,7 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(20,18,16,.2);padding-to
     </a>
     <nav class="main" aria-label="Principal">
       <a href="#cursos">Cursos</a>
-      <a href="#historia">La escuela</a>
+      <a href="la-escuela/">La escuela</a>
       <a href="#maestros">Profesores</a>
       <a href="#publicaciones">Publicaciones</a>
       <a href="#servicios">Servicios</a>
@@ -342,11 +135,25 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(20,18,16,.2);padding-to
       <ol class="timeline">
         <li><div class="y">1990</div><h3>Nace la escuela</h3><p>José Antonio Abreu, entonces ministro de Cultura, inaugura en la Casa Rómulo Gallegos (CELARG) la primera escuela de escritura de Iberoamérica.</p></li>
         <li><div class="y">1990s</div><h3>Los maestros</h3><p>José Ignacio Cabrujas, Denzil Romero, José Santos Urriola y Manuel Bermúdez dictan talleres del Programa Superior en Escritura Creativa.</p></li>
-        <li><div class="y">2009</div><h3>Refundación</h3><p>Ocho fundadores, entre ellos Luz Marina Rivas, José Tomás Angola y Vicencio González, refundan la Fundación Escuela de Escritores.</p></li>
+        <li><div class="y">2009</div><h3>Refundación</h3><p>La escuela se refunda como Fundación Escuela de Escritores y firma un convenio con la Alcaldía de Chacao.</p></li>
         <li><div class="y">2010</div><h3>Nueva casa en Chacao</h3><p>La escuela se instala en la biblioteca de la U. E. Carlos Soublette, en Bello Campo, por convenio con la Alcaldía de Chacao.</p></li>
         <li><div class="y">2010</div><h3>Premio Arturo Uslar Pietri</h3><p>Primer Premio Literario Iberoamericano Arturo Uslar Pietri, ganado por Eduardo Sánchez Rugeles.</p></li>
         <li><div class="y">2026</div><h3>Presencial y en línea</h3><p>Talleres en Caracas y para alumnos en cualquier país, más formación a la medida para empresas e instituciones.</p></li>
       </ol>
+
+      <div class="founder" id="fundador">
+        <div class="portrait torn" data-torn="bottom" role="img" aria-label="Vicencio González">
+          <span class="tape" aria-hidden="true"></span>
+          <span class="ini" aria-hidden="true">V<b>G</b></span>
+        </div>
+        <div>
+          <span class="role label">Fundador y director</span>
+          <h3>Vicencio González</h3>
+          <p>Fundó la escuela en 1990 junto a un grupo de escritores y académicos, entre ellos José Santos Urriola y Manuel Bermúdez. <strong>Treinta y seis años después, sigue al frente de ella como director.</strong></p>
+          <p>Editó las transcripciones del taller de José Ignacio Cabrujas que hoy publicamos como <em>Y Latinoamérica inventó la telenovela</em>.</p>
+          <a class="go" href="la-escuela/#fundador">Conoce al fundador</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -453,27 +260,13 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(20,18,16,.2);padding-to
       <p style="font-size:.92rem;max-width:34ch;color:var(--ink-soft)">Fundación Escuela de Escritores. La primera escuela de escritura de Iberoamérica, en Caracas desde 1990.</p>
     </div>
     <div><h5>Cursos</h5><ul><li><a href="#cursos">Presenciales</a></li><li><a href="#cursos">En línea</a></li><li><a href="#servicios">In company</a></li><li><a href="#cursos">Preguntas frecuentes</a></li></ul></div>
-    <div><h5>La escuela</h5><ul><li><a href="#historia">Historia</a></li><li><a href="#maestros">Profesores</a></li><li><a href="#publicaciones">Publicaciones</a></li><li><a href="#inicio">Asociación de Amigos</a></li></ul></div>
+    <div><h5>La escuela</h5><ul><li><a href="la-escuela/">Historia</a></li><li><a href="la-escuela/#fundador">El fundador</a></li><li><a href="#maestros">Profesores</a></li><li><a href="#publicaciones">Publicaciones</a></li><li><a href="#inicio">Asociación de Amigos</a></li></ul></div>
     <div><h5>Contacto</h5><ul><li>+58 424 284 9931</li><li><a href="https://www.instagram.com/ecrea.caracas/" target="_blank" rel="noopener">Instagram</a></li><li>Bello Campo, Chacao</li></ul></div>
     <div class="legal"><span>© 2026 ECREA · Fundación Escuela de Escritores</span><span>Web hecha por <a href="https://casacapriles.com" target="_blank" rel="noopener" style="text-decoration:underline">Casa Capriles</a></span></div>
   </div>
 </footer>
 
-<script>
-// Bordes de papel rasgado: genera un clip-path dentado por hoja
-(function(){
-  function rnd(seed){return function(){seed=(seed*9301+49297)%233280;return seed/233280}}
-  document.querySelectorAll('.torn').forEach(function(el,i){
-    var r=rnd(17+i*31), mode=el.dataset.torn||'bottom', pts=[], steps=34, j;
-    var amp=mode==='both'?7:4.5;
-    if(mode==='top'||mode==='both'){for(j=0;j<=steps;j++)pts.push((j/steps*100).toFixed(2)+'% '+(r()*amp).toFixed(2)+'%')}
-    else{pts.push('0% 0%','100% 0%')}
-    if(mode==='bottom'||mode==='both'){for(j=steps;j>=0;j--)pts.push((j/steps*100).toFixed(2)+'% '+(100-r()*amp).toFixed(2)+'%')}
-    else{pts.push('100% 100%','0% 100%')}
-    el.style.clipPath='polygon('+pts.join(',')+')';
-  });
-})();
-</script>
+<script src="assets/main.js"></script>
 
 </body>
 </html>
